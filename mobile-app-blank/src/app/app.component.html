@@ -1,3 +1,21 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        My App Header
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="main-content" [fullscreen]="true">
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="light">
+      <ion-title class="footer-title">
+        My App Footer
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
