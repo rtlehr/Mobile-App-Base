@@ -4,6 +4,7 @@ import {
   IonApp,
   IonBackButton,
   IonButtons,
+  IonButton,
   IonContent,
   IonFooter,
   IonHeader,
@@ -12,16 +13,14 @@ import {
   IonRouterOutlet,
   IonTitle,
   IonToolbar,
-  IonCol, 
-  IonGrid, 
+  IonCol,
+  IonGrid,
   IonRow,
   IonIcon
 } from '@ionic/angular/standalone';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterOutlet, RouterModule } from '@angular/router'; // ✅ Add RouterModule here
 import { addIcons } from 'ionicons';
 import { albums, body, calendar, logoIonic, time } from 'ionicons/icons';
-import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +28,7 @@ import { timer } from 'rxjs';
   imports: [
     CommonModule,
     RouterOutlet,
+    RouterModule,
     IonApp,
     IonHeader,
     IonToolbar,
@@ -39,11 +39,12 @@ import { timer } from 'rxjs';
     IonContent,
     IonFooter,
     IonMenu,
-    IonRouterOutlet, 
-    IonCol, 
-    IonGrid, 
+    IonRouterOutlet,
+    IonCol,
+    IonGrid,
     IonRow,
-    IonIcon
+    IonIcon,
+    IonButton
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

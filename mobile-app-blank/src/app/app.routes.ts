@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'clock',
+    loadComponent: () => import('./components/clock/clock.page').then( m => m.ClockPage)
+  },
 ];
