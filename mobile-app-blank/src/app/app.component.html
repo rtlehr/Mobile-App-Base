@@ -43,13 +43,19 @@
               </ion-button>
             </ion-col>
             <ion-col>
-              <ion-icon name="albums" size="large"></ion-icon>
+              <ion-button [routerLink]="['/files']">
+                <ion-icon name="albums" size="large"></ion-icon>
+              </ion-button>
             </ion-col>
             <ion-col>
+              <ion-button [routerLink]="['/person']">
               <ion-icon name="body" size="large"></ion-icon>
+            </ion-button>
             </ion-col>
             <ion-col>
+              <ion-button [routerLink]="['/calendar']">
               <ion-icon name="calendar" size="large"></ion-icon>
+            </ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>
