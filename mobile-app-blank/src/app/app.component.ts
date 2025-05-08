@@ -11,9 +11,17 @@ import {
   IonMenuButton,
   IonRouterOutlet,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonCol, 
+  IonGrid, 
+  IonRow,
+  IonIcon
 } from '@ionic/angular/standalone';
 import { RouterOutlet } from '@angular/router';
+
+import { addIcons } from 'ionicons';
+import { albums, body, calendar, logoIonic, time } from 'ionicons/icons';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -31,9 +39,17 @@ import { RouterOutlet } from '@angular/router';
     IonContent,
     IonFooter,
     IonMenu,
-    IonRouterOutlet
+    IonRouterOutlet, 
+    IonCol, 
+    IonGrid, 
+    IonRow,
+    IonIcon
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor() {
+    addIcons({ logoIonic, calendar, body, albums, time });
+  }
+}
