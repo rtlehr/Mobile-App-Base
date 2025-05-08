@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent  } from '@ionic/angular/standalone';
 
 import { IonIcon } from '@ionic/angular/standalone';
-
 import { addIcons } from 'ionicons';
 import { logoIonic } from 'ionicons/icons';
 
